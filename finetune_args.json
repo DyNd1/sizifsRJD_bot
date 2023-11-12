@@ -1,0 +1,28 @@
+{
+  "micro_batch_size": 10,
+  "gradient_accumulation_steps": 1,
+  "num_train_epochs": 17,
+  "learning_rate": 0.00032,
+  "cutoff_len": 621,
+  "val_set_size": 0,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "lora_target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "lora_modules_to_save": [],
+  "train_on_inputs": true,
+  "group_by_length": false,
+  "load_in_8bit": true,
+  "fp16": true,
+  "bf16": false,
+  "gradient_checkpointing": false,
+  "save_steps": 50,
+  "save_total_limit": 30,
+  "logging_steps": 3,
+  "additional_training_arguments": null,
+  "additional_lora_config": null,
+  "resume_from_checkpoint": "/content/drive/My Drive/Colab Data/LLaMA-LoRA Tuner/lora_models/sizifs-llma-v1.2/checkpoint-1500"
+}
